@@ -14,7 +14,7 @@ function createNavigationBar() {
 
     // Create the logo image element
     const logoImage = document.createElement('img');
-    logoImage.src = 'https://github.com/kosseyGO/Ninjago/blob/main/logo.png';
+    logoImage.src = 'https://github.com/kosseyGO/logo.png';
     logoImage.alt = 'My Logo';
     navElement.appendChild(logoImage);
 
