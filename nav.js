@@ -1,6 +1,6 @@
 // Define the array of navigation links and their corresponding URLs
 const navigationLinks = [
-    { text: 'Home', url: 'c:/users/kossey/Documents/Site/index.html' },
+    { text: 'Home', url: 'https://kosseygo.github.io/Ninjago/' },
     { text: 'Watch', url: 'c:/users/kossey/Documents/Site/watch.html' },
     { text: 'Games', url: 'c:/users/kossey/Documents/Site/games.html' },
     { text: 'Info', url: 'c:/users/kossey/Documents/Site/info.html' },
