@@ -1,10 +1,10 @@
 // Define the array of navigation links and their corresponding URLs
 const navigationLinks = [
-    { text: 'Home', url: 'https://github.com/kosseyGO/ninjago/index.html' },
-    { text: 'Watch', url: 'https://github.com/kosseyGO/ninjago/watch.html' },
-    { text: 'Games', url: 'https://github.com/kosseyGO/ninjago/games.html' },
-    { text: 'Info', url: 'https://github.com/kosseyGO/ninjago/info.html' },
-    { text: 'Contact', url: 'https://github.com/kosseyGO/ninjago/contact.php' },
+    { text: 'Home', url: '/index.html' },
+    { text: 'Watch', url: '/watch.html' },
+    { text: 'Games', url: '/games.html' },
+    { text: 'Info', url: '/info.html' },
+    { text: 'Contact', url: '/contact.php' },
     // Add more links as needed
 ];
 
@@ -14,7 +14,7 @@ function createNavigationBar() {
 
     // Create the logo image element
     const logoImage = document.createElement('img');
-    logoImage.src = 'https://github.com/kosseyGO/ninjago/logo.png';
+    logoImage.src = '/logo.png';
     logoImage.alt = 'My Logo';
     navElement.appendChild(logoImage);
 
