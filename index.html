@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Home | Lego Ninjago</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav id="navigation">
+            </nav>
+        </header>
+        <script src="nav.js"></script>
+        <h1 style="color: red;" align="center">Lego Ninjago</h1>
+        <div class="strip">
+            <div class="left-area">
+              <img src="s0.png" width="500" height="1000">
+            </div>
+            <div class="right-area">
+                <h1 align="center">Lego Ninjago</h1>
+                <p>Long before time had a name, the First Spinjitzu Master created Ninjago with the four Golden Weapons of Spinjitzu: the Scythe of Quakes, the Shurikens of Ice, the Nunchucks of Lightning, and the Sword of Fire. Before he passed away, his sons swore to protect the weapons from evil, but the older brother Garmadon was infected with evil, plotting to obtain and wield all four weapons so he could rule Ninjago in his own evil image. In the ensuing battle between brothers, the younger brother Wu fought hard enough to cast Garmadon down to the Underworld, hiding the weapons across the land and placing a guardian dragon at each hiding spot.</p>
+            </div>
+        </div>
+            <table cellspacing="50" align="center">
+                <tr>
+                    <th><h2>Play Song:</h2><audio id="audioPlayer" src="main.mp3" autoplay loop></audio></th>
+                    <th><button id="playPauseButton" onclick="togglePlayPause()">Play</button></th>
+                    <th><h2>Volume Control:</h2></th>
+                    <th><input type="range" id="volumeSlider" min="0" max="100" value="50" step="1"></th>
+                </tr>
+            <script>
+                    const audioPlayer = document.getElementById('audioPlayer');
+                    const playPauseButton = document.getElementById('playPauseButton');
+                    const volumeSlider = document.getElementById('volumeSlider');
+            
+                    function togglePlayPause() {
+                        if (audioPlayer.paused) {
+                            audioPlayer.play();
+                            playPauseButton.textContent = 'Pause';
+                        } else {
+                            audioPlayer.pause();
+                            playPauseButton.textContent = 'Play';
+                        }
+                    }
+            
+                    volumeSlider.addEventListener('input', () => {
+                        const volume = volumeSlider.value / 100;
+                        audioPlayer.volume = volume;
+                    });
+                </script>
+            <div class="end-paragraph">
+              <p>©2023 Lego Ninjago</p>
+            </div>
+    </body>
+</html>
