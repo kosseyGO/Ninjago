@@ -14,7 +14,7 @@ function createNavigationBar() {
 
     // Create the logo image element
     const logoImage = document.createElement('img');
-    logoImage.src = 'c:/users/kossey/Documents/Site/logo.png';
+    logoImage.src = 'main/logo.png';
     logoImage.alt = 'My Logo';
     navElement.appendChild(logoImage);
 
